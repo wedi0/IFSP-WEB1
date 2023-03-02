@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Matricula</h1>
+    </div>
+
+    <div id="personal data">
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <br>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" required pattern="[a-zA-Z]">
+                <br>
+                <br>
+                <label for="CPF">CPF:</label>
+                <input type="text" name="cpf" id="cpf" required= "" pattern="(\d{3}\.\d{3}-\d{2}|(\d{11})">
+                <br>
+                <br>
+                <label for="date">Data:</label>
+                <input type="date" name="dt" id="dt" required min="1907-01-01" required max="2023-03-02">
+                <br>
+                <br>
+                <label for="sex">Sexo: </label>
+                <input type="radio" name="sex" id="sex" value="Mulher">
+                <input type="radio" name="sex" id="sex" value="Homem">
+                <br>
+                <br>
+                <label for="city">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" required pattern="[a-zA-Z]">
+                <label for="state"> Estado: </label>
+                <select name="states" id="state">
+                    <optgroup value="Estados">
+                        <option value="São Paulo">SP</option>
+                        <option value="Rio de Janeiro">RJ</option>
+                        <option value="Espirito Santo"> ES</option>
+                        <option value="Minas Gerais">MG</option>
+                        <option value ="Distrito Federal">DF</option>
+                        <option value="Goias">GO</option>
+                        <option value="Mato grosso">MT</option>
+                        <option value="Mato grosso do Sul">MS</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Dados da Matrícula</legend>
+                <label for="cursos">Cursos:</label>
+                <label for="Análise e Desenvolvimento de Sistemas ">Análise e Desenvolvimento de Sistemas</label>
+                <input type="radio" name="ADS" id="Ads" value="Análise e Desenvolvimento de Sistemas">
+                <label for="Engenharia Mecânica ">Engenharia Mecânica </label>
+                <input type="radio" name="ENG M" id="ENG-M" value="Engenharia Mecânica">
+                <label for="Tecnologia em Sistemas para Internet">Tecnologia em Sistemas para Internet</label>
+                <input type="radio" name="TSI" id="Tsi" value="Tecnologia em Sistemas para Internet">
+                <br>
+                <br>
+                <label for="disciplinas optativa">Disiplina(s) Optativa:</label>
+                <br>
+                <label for="pdr">Programação de Robos  </label>
+                <input type="checkbox" name="programação de roboso" id="pdr">
+                <label for="ddi">Desenvolvimento de Inteligência Artificial</label>
+                <input type="checkbox" name="Desenvolvimento de Inteligência Artificial" id="ddi">
+                <br>
+                <label for="Modelagem computacional  ">Modelagem computacional </label>
+                <input type="checkbox" name="Modelagem computacional" id="mc">
+                <label for="dcd">Ambientes isolados: Desenvolvimento em Docker</label>
+                <input type="checkbox" name="Ambientes isolados: Desenvolvimento em Docker" id="dcd">
+                <br>
+                <br>
+                <br>
+                <label for="Sugestões">Sugestões para disciplinas futuras:</label>
+                <br>
+                <textarea name="sugestões" id="sugestoes" cols="75" rows="10"></textarea>
+            </fieldset>
+        </form>
+    </div>
+
+    <div style="text-align: center;">
+        <button type="button" ><b>Enviar</b></button>
+    </div>
+</body>
+</html>
