@@ -1,0 +1,9 @@
+#e5e619 - Amarelo
+#bebe3a - Amarelo Escuro
+#edf0f1 - Branco
+#24252A - Preto
+
+Fonte 1 - Montserrat
+Fonte 2 - Montserrat Alternates
+Fonte 3 - Montserrat Subrayada
+
