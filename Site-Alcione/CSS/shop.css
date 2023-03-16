@@ -66,16 +66,41 @@ button:hover{
     
 }
 
-.itens1{
+table.shop{
+    width: 500;
+    height: 500;
+    padding-top: 90px;
+    padding: 30px 10%;
     display: inline-block;
-    border-radius: 10px;
-    border: 1px solid black;
-    width: 1583px;
-    height: 650px;
-    background-repeat: no-repeat;
-    background-size: 70%;
-    align-items: center;
+}
+
+td.shop{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
 }
 
 
 
+img.product{
+    width: 400px;
+    height: 400px;
+    display: block; /* Remove expaço extra ao redor da imagem */
+    transition: all 0.3s ease;
+    border-radius: 5%;
+    margin-right: 35px;
+    border: #bebe3a;
+    
+}
+
+
+.shop p{
+    color: #edf0f1;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.shop button{
+    margin-top: 15px;
+    margin-left: 60px;
+}

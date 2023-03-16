@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,100&family=Montserrat+Subrayada:wght@700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -63,10 +64,25 @@ button:hover{
 
 .biografia h1{
     color:#edf0f1;
+    margin-bottom: 25px;
     
 }
 
+.msc{
+    padding: 30px 10%;
+}
+
+.msc h1{
+    color:#edf0f1;
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+}
 
 
+.msc iframe{
+    margin-bottom: 10px;
+    
+    
+}
 
 
