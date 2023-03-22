@@ -1,0 +1,110 @@
+/* Estilos para seção "Dados Pessoais" */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.dados-pessoais {
+    background-color: #5EE7EB;
+    padding: 20px 10%;
+    border: 1px solid #0f0f0f;
+
+}
+
+.dados-pessoais h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.dados-pessoais p{
+    margin-left: 38%;
+    margin-bottom: 5px;
+    
+}
+  
+/* Estilos para seção "Personalidade" */
+.personalidade {
+    background-color: #49B4B8;
+    padding: 20px;
+    border: 1px solid #030303;
+}
+
+.personalidade h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.personalidade p{
+    margin-left: 40%;
+    margin-bottom: 5px;
+}
+  
+
+/* Estilos para seção "Qualificação" */
+.qualificacao {
+    background-color: #A7ECEE;
+    padding: 20px;
+    border: 1px solid #080808;
+}
+
+
+/* Estilos para seção "Identificação" */
+.identificacao {
+    background-color: #5EE7EB;
+    padding: 20px;
+    border: 1px solid #050505;
+    position: relative;
+}
+.identificacao img {
+    width: 30%;
+    height: auto;
+    margin-left: 40%;
+    border: 1px solid #050505;
+}
+  
+/* Estilos para box model */
+.box {
+    width: 50%;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+  
+/* Estilos para flexbox */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+/* Exemplo de estilos adicionais para seção "Qualificação" */
+
+.qualificacao h2{
+    text-align: center;
+
+}
+  .qualificacao h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 40%;
+    margin-bottom: 25px;
+    
+  }
+  .qualificacao ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .qualificacao li {
+    margin-bottom: 10px;
+    margin-left: 40%;
+  }
+  .qualificacao a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+  }
