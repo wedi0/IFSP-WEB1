@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="soma"></div>
+    <script>
+        let soma = 0
+        let resultado = document.getElementById("soma")
+
+        for(let i = 1; i < 1000; i++){
+            if (i % 3 == 0 || i % 5 ==0){
+                soma += i
+            }
+        }
+
+        resultado.innerHTML = 'A soma de todos os multiplos de 3 e 5 abaixo de 1000 é: ' + soma 
+    </script>
+</body>
+</html>

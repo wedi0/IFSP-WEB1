@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    
+<body>
+    <div>
+        <h1>Digite 3 numeros para saber qual será o maior</h1>
+        <form>
+            
+            <p><label >Primeiro numero: </label>
+                <input type="number" id="n1"></p>
+            <p><label >Segundo numero: </label>
+                <input type="number" id="n2"></p>
+            <p><label >Terceiro numero: </label>
+                <input type="number" id="n3"></p>
+            <br>
+            <button id="btn">Descobrir</button>            
+        </form>
+    </div>
+
+    <script>
+        const btn = document.getElementById("btn")
+
+        btn.addEventListener("click", function(){
+            n1 = document.getElementById("n1").value
+            n2 = document.getElementById("n2").value
+            n3 = document.getElementById("n3").value
+
+            if(n1 > n2 && n1 > n3 ){
+                alert("O maior numero é: " + n1)
+            }
+            else if(n2 > n1 && n2 > n3 ){
+                alert("O maior numero é: " + n2)
+            }else{
+                alert("O maior numero é: " + n3)
+            }
+            
+    })
+
+
+    </script>
+</body>
+</html>

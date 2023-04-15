@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        div{
+            text-align: center;
+        }
+    </style>
+<body>
+
+    <div>
+        <h1>Detector de menor de idade</h1>
+        <form>
+            
+            <p>
+                <label >Digte sua idade</label>
+                <input id="idade" type="number">
+            </p>
+
+            <button id="btn">Conferir</button>
+        </form>
+    </div>
+    
+    <script>
+        const btn = document.getElementById("btn")
+
+        btn.addEventListener("click", function(){
+            idade = document.getElementById("idade").value 
+
+            if(idade >= 18){
+                alert("Usuário maior de idade.")
+            }else{
+                alert("Usuário menor de idade")
+            }
+        })
+    </script>
+
+    
+</body>
+</html>
