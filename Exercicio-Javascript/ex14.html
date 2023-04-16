@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id = "base"></div>
+    <div id = "expoente"></div>
+    <div id="resultado"></div>
+    
+    <script>
+        const base = 2;
+        const expoenteMaximo = 8;
+
+        let potencia = 1;
+        let expoente = 0;
+
+        const resultadoDiv = document.getElementById("resultado");
+        const Base = document.getElementById("base");
+        const expoenteTag = document.getElementById("expoente");
+
+        const calcularPotencia = () => {
+            if (expoente <= expoenteMaximo) {
+                potencia *= base;
+                resultadoDiv.innerHTML += ` ${potencia}<br>`;
+                expoenteTag.innerHTML = ` ${base}<sup>${expoente}</sup>`;
+                expoente++;
+                setTimeout(calcularPotencia, 1000);
+            }
+        };
+
+        Base.innerHTML = ` Valor da base = ${base}`;
+        expoenteTag.innerHTML = ` ${base}<sup>${expoente}</sup>`;
+        resultadoDiv.innerHTML = ` ${potencia}<br>`;
+        setTimeout(calcularPotencia, 1000);
+
+    </script>
+
+</body>
+</html>

@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+
+<style>
+    td {
+        padding: 5px;
+        border: 1px solid black;
+        
+    }
+
+    .primo {
+        background-color: rgb(241, 241, 241);
+    }
+</style>
+
+<body >
+
+    <table>
+        <thead>
+            <tr>
+                <th>Números Primos</th>
+            </tr>
+        </thead>
+        <tbody id="resultado">
+        </tbody>
+    </table>
+
+    <script>
+        let resultadoTbody = document.getElementById("resultado");
+        let max = 200;
+
+        for (let numero = 2; numero <= max; numero++) {
+            let isPrimo = true;
+
+            for (let i = 2; i <= Math.sqrt(numero); i++) {
+                if (numero % i === 0) {
+                    isPrimo = false;
+                    break;
+                }
+            }
+
+            if (isPrimo) {
+                let tr = document.createElement("tr");
+                let td = document.createElement("td");
+                td.textContent = numero;
+                td.classList.add("primo");
+                tr.appendChild(td);
+                resultadoTbody.appendChild(tr);
+            }
+        }
+    </script>
+
 </body>
+
 </html>

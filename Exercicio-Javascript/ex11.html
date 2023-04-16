@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h1>Calculadora de função do segundo grau</h1>
+        <p>
+            <label> Valor de A:</label>
+            <input type="number" name="numA" id="numA">
+        </p>
+        <p>
+            <label> Valor de B:</label>
+            <input type="number" name="numB" id="numB">
+        </p>
+        <p>
+            <label> Valor de C:</label>
+            <input type="number" name="numC" id="numC">
+        </p>
+
+        <button id="btn">Calcular delta</button>
+
+        <br>
+
+        <div id="resultado"></div>
+
+        <script>
+
+            const btn = document.getElementById("btn")
+            let resultado = document.getElementById("resultado")
+
+            btn.addEventListener("click", function () {
+                let numA = parseFloat(document.getElementById("numA").value)
+                let numB = parseFloat(document.getElementById("numB").value)
+                let numC = parseFloat(document.getElementById("numC").value)
+
+                resultadoDiv.innerHTML = `Δ = ${numB}² - 4 * ${numA} * ${numC}`
+
+                setTimeout(() => {
+                    resultadoDiv.innerHTML = `Δ = ${numB * numB} - ${4 * numA * numC}`
+                    setTimeout(() => {
+                        resultadoDiv.innerHTML = `Δ = ${(numB * numB) - (4 * numA * numC)}`
+                    }, 1000)
+                }, 1000)
+            })
+        </script>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Inversão de palavras</h1>
+
+    <p>
+        <label>Digite alguma palavra</label>
+        <input type="text" id="word">
+    </p>
+
+    <button id="btn">Inverter</button>
+
+
+    <div id="resposta"></div>
+
+    <script>
+
+        let resposta = document.getElementById("resposta")
+        const btn = document.getElementById("btn")
+
+        btn.addEventListener("click", function () {
+            let palavra = document.getElementById("word").value
+            let inverter = palavra.split("").reverse().join("")
+            resposta.innerHTML = 'A palavra invertida fica assim:' + inverter;
+        })
+    </script>
+
+
+
+</body>
+
+</html>
